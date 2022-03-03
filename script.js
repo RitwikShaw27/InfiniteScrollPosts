@@ -2,7 +2,7 @@ const postsContainer = document.getElementById("post-container");
 const loading = document.querySelector(".loader");
 const filter = document.getElementById("filter");
 
-let limit = 3;
+let limit = 5;
 let page = 1;
 
 // Fetch posts from API
@@ -44,7 +44,7 @@ function showLoading() {
       page++;
       showPosts();
     }, 300);
-  }, 1200);
+  }, 1000);
 }
 
 // Filter posts by input
